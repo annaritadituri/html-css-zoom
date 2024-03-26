@@ -8,12 +8,17 @@ body {
     background-color: black; 
 }
 
+/*
+Sezione header
+*/
+
 header {
     height: 5vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    margin-bottom: 40px;
 }
 header button {
     background-color: rgb(166, 166, 166);
@@ -28,4 +33,24 @@ header button {
 
 #rotate {
     transform: rotate(45deg)
+}
+
+/*
+Layout griglia
+*/
+
+main .row {
+    max-width: 90vw;
+    margin: auto;
+    height: calc(100vh - 20vh);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 5px;
+}
+
+.single-element {
+    background-color: brown;
+    width: calc((100% - 30px) / 7);
+    height: calc((100% - 40px) / 5);
 }
