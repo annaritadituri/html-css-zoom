@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: black; 
+}
+
+header {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+header button {
+    background-color: rgb(166, 166, 166);
+    filter: invert(100%);
+    border: 0;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+#rotate {
+    transform: rotate(45deg)
+}
