@@ -35,6 +35,10 @@ header button {
     transform: rotate(45deg)
 }
 
+.vertical-align {
+    vertical-align: middle;
+}
+
 /*
 Layout griglia
 */
@@ -50,19 +54,71 @@ main .row {
 }
 
 .single-element {
-    background-color: brown;
     width: calc((100% - 30px) / 7);
     height: calc((100% - 40px) / 5);
     position: relative;
     background-image: url("https://lh3.googleusercontent.com/proxy/U9Ahhf6yPv4PDZ7XHHxSp_U6Ep1ri1b2yPKfpAO3VAqYI5NW-_BaFVQ2D9wbw9JshtHI6wMH-GvRfOhPoDfl0XoWUaFg_N3Zy7s6hLvvmnF9h1ffB8i0hvDjR1M-OBCo1h_OGtSy_kFjckO7movInzGijs_2ssAoZ31iN8Q");
-    
 }
 
 .name {
     color: white;
-    background-color: rgba(128, 128, 128, 0.362);
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.34);
+    padding: 3px;
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+/*
+Sezione footer
+*/
+
+footer {
+    background-color: rgb(85, 85, 85);
+    height: 8vh;
+    margin-top: 30px;
+}
+
+footer .row {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer button {
+    background-color: rgb(85, 85, 85);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+
+.expand {
+    display: inline-block;
+    width: 25px;
+}
+.icons {
+    display: inline-block;
+    width: calc(100% - 40px);
+}
+
+footer .material-symbols-outlined {
+    font-size: 35px;
+    width: 100%;
+}
+
+.green {
+    color: rgb(19, 201, 19);
+}
+
+.bottom-right button {
+    font-size: 15px;
+    font-weight: 600;
+    color: red;
+    height: 8vh;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 0;
 }
